@@ -13,7 +13,7 @@ import { a } from '@react-spring/three'
 import millScene from '../assets/3d/mill.glb'
 import { useFrame, useThree } from '@react-three/fiber'
 
-const mill = ({ isRotating, setIsRotating, ...props }) => {
+const mill = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
   const millRef = useRef();
 
   const { gl, viewport} = useThree()
