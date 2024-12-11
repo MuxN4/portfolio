@@ -106,12 +106,17 @@ body:has(.card[data-color="green"]:hover) {
   z-index: -1;
   width: inherit;
   height: inherit;
-  transition: 250ms;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
   transform-style: preserve-3d;
-  transform-origin: bottom right;
-  transform: rotateZ(15deg);
-  will-change: transform;
-  box-shadow: 16px 0 40px #e4e4e4;
+  transform-origin: top left; 
+  transform: skewX(-10deg) rotateZ(-5deg); 
+  will-change: transform, opacity;
+  opacity: 0.9; 
+  background: linear-gradient(145deg, #f5f5f5, #dcdcdc); 
+  backdrop-filter: blur(5px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1); 
+  clip-path: polygon(0 0, 100% 5%, 95% 100%, 0% 95%); 
 }
 
 .block-container .btn-back-red {
