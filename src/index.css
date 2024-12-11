@@ -154,12 +154,14 @@ body:has(.card[data-color="green"]:hover) {
   width: inherit;
   height: inherit;
   background-color: #ffffff33;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  transition: 250ms;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  transition: transform 250ms ease, box-shadow 250ms ease, opacity 250ms ease;
   transform-style: preserve-3d;
   transform-origin: top left;
   overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), inset 0 0 30px rgba(255, 255, 255, 0.3);
 }
 
 .block-container:hover > .btn-back {
