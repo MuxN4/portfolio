@@ -226,7 +226,7 @@ export const projects = [
         theme: 'btn-back-blue',
         name: 'Summafy',
         description: 'Built an AI-powered web application that allows users to quickly summarize web articles by simply pasting the URL. The application utilizes the OpenAI GPT-4 model through RapidAPI to generate concise and accurate summaries.',
-        link: 'https://sammafy-ai.netlify.app/',
+        link: 'https://summafy-ai.netlify.app',
     },
     // {
     //     iconUrl: car,
