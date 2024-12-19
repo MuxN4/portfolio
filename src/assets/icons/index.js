@@ -26,7 +26,7 @@ import estate from './estate.svg'
 import camping from './camping.svg'
 import snapgram from './snapgram.svg'
 import summiz from './summiz.svg'
-import threads from './threads.svg'
+import summify from './summify.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
@@ -61,7 +61,7 @@ export {
     camping,
     snapgram,
     summiz,
-    threads,
+    summify,
     arrow,
     contact,
     soundon,

@@ -27,7 +27,7 @@ import {
     snapgram,
     summiz,
     tailwindcss,
-    threads,
+    summify,
     typescript
 } from "../assets/icons";
 
@@ -220,14 +220,14 @@ export const projects = [
         name: 'Safari Track',
         description: 'Created a stunning landing page for SafariTrack, a travel companion app that highlights the beauty of Kenya and provides an engaging user experience.',
         link: 'https://safari-track.vercel.app/',
-    }
-    // {
-    //     iconUrl: threads,
-    //     theme: 'btn-back-green',
-    //     name: 'Full Stack Threads Clone',
-    //     description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    //     link: 'https://github.com/adrianhajdin/threads',
-    // },
+    },
+    {
+        iconUrl: summify,
+        theme: 'btn-back-blue',
+        name: 'Summafy',
+        description: 'Built an AI-powered web application that allows users to quickly summarize web articles by simply pasting the URL. The application utilizes the OpenAI GPT-4 model through RapidAPI to generate concise and accurate summaries.',
+        link: 'https://sammafy-ai.netlify.app/',
+    },
     // {
     //     iconUrl: car,
     //     theme: 'btn-back-blue',
