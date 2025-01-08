@@ -31,6 +31,9 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import linkup from './linkup.svg'
+import SQLite from './SQLite.svg'
+import bash from './Bash.svg'
 
 export {
     css,
@@ -65,5 +68,8 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    linkup,
+    bash,
+    SQLite
 }
