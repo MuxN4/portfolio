@@ -28,7 +28,11 @@ import {
     summiz,
     tailwindcss,
     summify,
-    typescript
+    typescript,
+    SQLite,
+    bash,
+    linkup
+
 } from "../assets/icons";
 
 export const skills = [
@@ -137,6 +141,16 @@ export const skills = [
         name: "Postman",
         type: "API Testing",
     },
+    {
+        imageUrl: SQLite,
+        name: "SQLite",
+        type: "Database",
+    },
+    {
+        imageUrl: bash,
+        name: "Bash",
+        type: "Scripting",
+    },
 ];
 
 export const experiences = [
@@ -215,6 +229,13 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: summify,
+        theme: 'btn-back-blue',
+        name: 'Summafy',
+        description: 'Built an AI-powered web application that allows users to quickly summarize web articles by simply pasting the URL. The application utilizes the OpenAI GPT-4 model through RapidAPI to generate concise and accurate summaries.',
+        link: 'https://summafy-ai.netlify.app',
+    },
+    {
         iconUrl: camping,
         theme: 'btn-back-green',
         name: 'Safari Track',
@@ -222,19 +243,12 @@ export const projects = [
         link: 'https://safari-track.vercel.app/',
     },
     {
-        iconUrl: summify,
-        theme: 'btn-back-blue',
-        name: 'Summafy',
-        description: 'Built an AI-powered web application that allows users to quickly summarize web articles by simply pasting the URL. The application utilizes the OpenAI GPT-4 model through RapidAPI to generate concise and accurate summaries.',
-        link: 'https://summafy-ai.netlify.app',
+        iconUrl: linkup,
+        theme: 'btn-back-green',
+        name: 'Linkup',
+        description: 'Developed a modern social media platform that fosters meaningful connections and encourages seamless interactions among users, enabling community building and networking.',
+        link: 'https://linkup-hub.vercel.app/',
     },
-    // {
-    //     iconUrl: car,
-    //     theme: 'btn-back-blue',
-    //     name: 'Car Finding App',
-    //     description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-    //     link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    // },
     // {
     //     iconUrl: snapgram,
     //     theme: 'btn-back-pink',
