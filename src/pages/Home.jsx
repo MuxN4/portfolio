@@ -7,11 +7,11 @@ import Sky from '../models/Sky'
 import Plane from '../models/Plane'
 import HomeInfo from '../components/HomeInfo'
 
-import water from '../assets/water.mp3'
+import intro from '../assets/Intro.mp3'
 import { soundon, soundoff } from '../assets/icons'
 
 const Home = () => {
-  const audioRef = useRef(new Audio(water));
+  const audioRef = useRef(new Audio(intro));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
 
