@@ -94,3 +94,28 @@ body {
 .mobile-menu.visible {
   transform: translateX(0);
 }
+
+/* Landing Page */
+.landing-container {
+  @apply w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4;
+}
+
+.landing-link {
+  @apply px-10 py-3 border rounded-full border-gray-500 sm:border-[#f2f8fc] flex items-center gap-2 relative transition-all duration-300;
+}
+
+/* Desktop Hover Effect */
+@media (min-width: 640px) {
+  .landing-link:hover {
+    background-color: #f2f8fc;
+    color: black;
+  }
+}
+
+/* Mobile Hover Effect */
+@media (max-width: 639px) {
+  .landing-link:hover {
+    background-color: #1f2937; 
+    color: #f2f8fc;
+  }
+}
