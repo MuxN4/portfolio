@@ -8,7 +8,7 @@ const poppinsFont = Poppins({
 });
 
 export const metadata = {
-  title: "Stephen Onyango | Portfolio",
+  title: "Stephen Onyango",
   description: "My portfolio",
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppinsFont.variable} antialiased`}
+        className={`${poppinsFont.variable} antialiased leading-8 overflow-x-hidden`}
       >
         {children}
       </body>
