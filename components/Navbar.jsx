@@ -1,6 +1,21 @@
 import { assets } from '@/assets/assets';
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react';
+
+const menuVariants = {
+  hidden: { x: "100%", opacity: 0 },
+  visible: { 
+    x: 0, 
+    opacity: 1, 
+    transition: { duration: 0.4, ease: "easeInOut" } // 🔥 Smooth animation
+  },
+  exit: { 
+    x: "100%", 
+    opacity: 0, 
+    transition: { duration: 0.3, ease: "easeInOut" } // 🔥 Smooth exit
+  }
+};
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +25,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='navbar'>
+    <motion.nav 
+      className='navbar' 
+      initial={{ y: -50, opacity: 0 }} 
+      animate={{ y: 0, opacity: 1 }} 
+      transition={{ duration: 0.6, ease: "easeOut" }} 
+    >
       <a href="/" className="block md:hidden mr-auto">
         <Image 
           src={assets.logo}
@@ -36,14 +56,24 @@ const Navbar = () => {
         />
       </button>
 
-      {/* Mobile Menu */}
-      <ul className={`mobile-menu ${isMenuOpen ? 'visible' : 'hidden'}`}>
-        <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-        <li><a href="#about" onClick={toggleMenu}>About</a></li>
-        <li><a href="#work" onClick={toggleMenu}>Work</a></li>
-        <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-      </ul>
-    </nav>
+      {/* Animated Mobile Menu with AnimatePresence */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.ul 
+            className="mobile-menu" 
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={menuVariants}
+          >
+            <li><a href="#home" onClick={toggleMenu}>Home</a></li>
+            <li><a href="#about" onClick={toggleMenu}>About</a></li>
+            <li><a href="#work" onClick={toggleMenu}>Work</a></li>
+            <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+          </motion.ul>
+        )}
+      </AnimatePresence>
+    </motion.nav>
   );
 };
 
