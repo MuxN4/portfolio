@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="70" 
+        font-family="Arial, sans-serif" 
+        font-weight="700" 
+        font-size="80px"
+        letter-spacing="1"
+        fill="white">
+    Stephen
+  </text>
+  <circle cx="360" cy="70" r="8" fill="#00CED1"/>
+</svg>
