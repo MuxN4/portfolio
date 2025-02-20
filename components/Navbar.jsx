@@ -8,12 +8,12 @@ const menuVariants = {
   visible: { 
     x: 0, 
     opacity: 1, 
-    transition: { duration: 0.4, ease: "easeInOut" } // 🔥 Smooth animation
+    transition: { duration: 0.4, ease: "easeInOut" } 
   },
   exit: { 
     x: "100%", 
     opacity: 0, 
-    transition: { duration: 0.3, ease: "easeInOut" } // 🔥 Smooth exit
+    transition: { duration: 0.3, ease: "easeInOut" } 
   }
 };
 
@@ -66,7 +66,7 @@ const Navbar = () => {
             exit="exit"
             variants={menuVariants}
           >
-            <li><a href="#home" onClick={toggleMenu}>Home</a></li>
+            <li><a href="#top" onClick={toggleMenu}>Home</a></li>
             <li><a href="#about" onClick={toggleMenu}>About</a></li>
             <li><a href="#work" onClick={toggleMenu}>Work</a></li>
             <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
