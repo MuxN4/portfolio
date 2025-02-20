@@ -25,12 +25,9 @@ import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
-import web_icon from './web-icon.png';
-import mobile_icon from './mobile-icon.png';
-import ui_icon from './ui-icon.png';
-import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
+import send_icon_white from './send-icon-white.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
@@ -62,44 +59,38 @@ export const assets = {
     menu_white,
     close_black,
     close_white,
-    web_icon,
-    mobile_icon,
-    ui_icon,
-    graphics_icon,
     right_arrow,
     send_icon,
+    send_icon_white,
     right_arrow_bold,
     right_arrow_bold_dark
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Summafy',
+        description: 'Built an AI-powered app for quick web article summaries using GPT-4 via RapidAPI.',
+        bgImage: '/summafy.png',
+        url: 'https://summafy-ai.netlify.app/',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Ingredu',
+        description: 'Recipe finder app using Edamam API, with detailed recipes, YouTube links, and local favorites.',
+        bgImage: '/ingredu.png',
+        url: 'https://ingredu.vercel.app/',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Linkup',
+        description: 'Built a social platform for meaningful connections and seamless interactions.',
+        bgImage: '/linkup.png',
+        url: 'https://linkup-hub.vercel.app/',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Safari Track',
+        description: "Designed a stunning landing page for SafariTrack, showcasing Kenya's beauty and enhancing UX.",
+        bgImage: '/safaritrack.png',
+        url: 'https://safari-track.vercel.app/',
     },
-]
-
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
 ]
 
 export const infoList = [
