@@ -119,3 +119,12 @@ body {
     color: #f2f8fc;
   }
 }
+
+
+@media (min-width: 640px) { /* Applies only on desktop */
+  .custom-toast {
+    background-color: #1d1d1d !important; 
+    color: white !important;
+    border: 1px solid #f2f8fc;
+  }
+}
