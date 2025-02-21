@@ -1,7 +1,7 @@
 import { assets, infoList, toolkit } from '@/assets/assets'
-import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 // Color map 
 const toolColors = {
@@ -54,24 +54,15 @@ const About = () => {
       </motion.h2>
 
       <motion.div 
-        className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'
+        className='flex w-full flex-col items-center gap-20 my-12'
         variants={fadeIn}
       >
-        {/* User Image with Subtle Parallax */}
-        <motion.div 
-          className='w-64 sm:w-80 rounded-3xl max-w-none'
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.4 }}
-        >
-          <Image src={assets.user_image} alt='user image' className='w-full' />
-        </motion.div>
-
         <motion.div className='flex-1' variants={fadeIn}>
-          <p className='mb-10 max-w-2xl font-Poppins'>
+          <p className='mb-10 max-w-2xl font-Poppins text-center'>
             I’m a software developer who enjoys building efficient, scalable applications. With a strong focus on problem-solving and continuous learning, I love creating solutions that deliver great user experiences and meet user needs.
           </p>
 
-          <motion.ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
+          <motion.ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-lg mx-auto justify-center">
             {infoList.map(({ icon, iconDark, title, description }, idx) => (
               <motion.li
                 key={idx}
@@ -87,11 +78,11 @@ const About = () => {
             ))}
           </motion.ul>
 
-          <motion.h4 className='my-6 font-Poppins' variants={fadeIn}>
+          <motion.h4 className='my-6 font-Poppins text-center' variants={fadeIn}>
             My Toolkit
           </motion.h4>
 
-          <motion.ul className='flex items-center gap-2 sm:gap-4' variants={staggerContainer}>
+          <motion.ul className='flex flex-wrap justify-center gap-2 sm:gap-4' variants={staggerContainer}>
             {toolkit.map((tool, idx) => (
               <motion.li 
                 key={idx} 
@@ -105,7 +96,6 @@ const About = () => {
               </motion.li>
             ))}
           </motion.ul>
-
         </motion.div>
       </motion.div>
     </motion.div>
