@@ -66,6 +66,8 @@ export const assets = {
     right_arrow_bold_dark
 };
 
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+
 export const workData = [
     {
         title: 'Summafy',
@@ -100,4 +102,22 @@ export const infoList = [
 
 export const toolkit = [
     assets.vscode, assets.javascript, assets.react, assets.postgres, assets.tailwind, assets.git, assets.go, assets.python
+];
+
+export const socialLinks = [
+  {
+    id: "github",
+    href: "https://github.com/MuxN4",
+    icon: <FaGithub size={24} />,
+  },
+  {
+    id: "linkedin",
+    href: "https://www.linkedin.com/in/s-onyango/",
+    icon: <FaLinkedin size={24} />,
+  },
+//   {
+//     id: "twitter",
+//     href: "https://twitter.com/yourtwitter",
+//     icon: <FaTwitter size={24} />,
+//   },
 ];
