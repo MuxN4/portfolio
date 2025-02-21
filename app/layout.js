@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 const poppinsFont = Poppins({
   variable: "--font-poppins", 
@@ -18,6 +19,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppinsFont.variable} antialiased leading-8 overflow-x-hidden`}
       >
+        <Toaster position="bottom-right" 
+          reverseOrder={false}
+          toastOptions={{
+            className: "custom-toast",
+          }}
+        />
         {children}
       </body>
     </html>
