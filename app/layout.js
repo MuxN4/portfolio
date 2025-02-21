@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import ParticlesBackground from "@/components/Particles";
 
 const poppinsFont = Poppins({
   variable: "--font-poppins", 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
             className: "custom-toast",
           }}
         />
+        <ParticlesBackground />
         {children}
       </body>
     </html>
