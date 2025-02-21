@@ -2,6 +2,7 @@
 
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import LandingPage from "@/components/LandingPage";
 import Navbar from "@/components/Navbar";
 import Work from "@/components/Work";
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Work />
       <Contact />
+      <Footer />
     </>
   );
 }
