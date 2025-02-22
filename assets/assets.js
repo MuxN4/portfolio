@@ -1,11 +1,10 @@
 import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
-import edu_icon from './edu-icon.png';
-import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
+import next from './next.png';
 import javascript from './javascript.svg';
 import react from './react.svg';
 import tailwind from './Tailwind.svg';
@@ -35,11 +34,10 @@ export const assets = {
     user_image,
     code_icon,
     code_icon_dark,
-    edu_icon,
-    edu_icon_dark,
     project_icon,
     project_icon_dark,
     vscode,
+    next,
     javascript,
     react,
     tailwind,
@@ -101,7 +99,7 @@ export const infoList = [
 ];
 
 export const toolkit = [
-    assets.vscode, assets.javascript, assets.react, assets.postgres, assets.tailwind, assets.git, assets.go, assets.python
+    assets.vscode,assets.next, assets.javascript, assets.react, assets.postgres, assets.tailwind, assets.git, assets.go, assets.python
 ];
 
 export const socialLinks = [
