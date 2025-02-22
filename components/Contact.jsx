@@ -60,8 +60,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               required
-              className="w-full mt-2 px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-300
-                lg:bg-[#1d1d1d] lg:border-white lg:text-white"
+              className="input-field"
               placeholder="Your name"
             />
           </label>
@@ -74,8 +73,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               required
-              className="w-full mt-2 px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-300
-                lg:bg-[#1d1d1d] lg:border-white lg:text-white"
+              className="input-field"
               placeholder="Your email eg., example@gmail.com"
             />
           </label>
@@ -89,8 +87,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full mt-2 px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-300
-              lg:bg-[#1d1d1d] lg:border-white lg:text-white"
+            className="input-field"
             placeholder="How can I assist?"
           />
         </label>
@@ -98,7 +95,7 @@ const Contact = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full py-3 bg-cyan-500 font-semibold rounded-md hover:bg-cyan-600 disabled:bg-gray-600 disabled:text-white transition-all"
+          className="contact-button"
         >
           {loading ? 'Sending...' : 'Send Message'}
         </button>
