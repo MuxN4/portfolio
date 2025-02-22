@@ -70,11 +70,7 @@ const Work = () => {
             <div className='absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-500' />
 
             {/* Project Info Card */}
-            <div className='absolute bottom-5 left-1/2 w-10/12 -translate-x-1/2 
-              bg-white sm:bg-white lg:bg-[#1d1d1d] p-4 rounded-md shadow-lg 
-              transition-all duration-500 group-hover:bottom-7 
-              group-hover:opacity-20 group-hover:backdrop-blur-xl'
-            >
+            <div className='project-info-card'>
               <h3 className='text-lg font-semibold'>{project.title}</h3>
               <p className='text-sm'>{project.description}</p>
 
