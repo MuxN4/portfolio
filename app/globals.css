@@ -12,13 +12,13 @@
 
 /* Root Variables (Light & Dark Theme) */
 :root {
-  --background: #ffffff; /* Light mode background */
+  --background: #f2f8fc; /* Light mode background */
   --foreground: #1d1d1d; /* Light mode text */
 
   /* Dark mode for larger screens */
   @media (min-width: 1024px) {
     --background: #1d1d1d;
-    --foreground: #ffffff;
+    --foreground: #f2f8fc;
   }
 }
 
@@ -83,7 +83,7 @@ body {
   width: 16rem;
   height: 100vh;
   z-index: 40;
-  background-color: #fdfdfd;
+  background-color: #f2f8fc;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -127,4 +127,24 @@ body {
     color: white !important;
     border: 1px solid #f2f8fc;
   }
+}
+
+/* Project Info Card */
+.project-info-card {
+  @apply absolute bottom-5 left-1/2 w-10/12 -translate-x-1/2 
+         bg-[#f2f8fc] sm:bg-[#f2f8fc] lg:bg-[#1d1d1d] p-4 rounded-md 
+         shadow-lg transition-all duration-500 
+         group-hover:bottom-7 group-hover:opacity-20 
+         group-hover:backdrop-blur-xl;
+}
+
+/* Contact */
+.input-field {
+  @apply w-full mt-2 px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-300
+         lg:bg-[#1d1d1d] lg:border-[#f2f8fc] lg:text-[#f2f8fc];
+}
+
+.contact-button {
+  @apply w-full py-3 bg-cyan-500 font-semibold rounded-md hover:bg-cyan-600 
+         disabled:bg-gray-600 disabled:text-[#f2f8fc] transition-all;
 }
