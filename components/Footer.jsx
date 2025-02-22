@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer className="py-10">
         {/* Horizontal Line */}
-        <hr className="border-t border-gray-500 sm:border-white mb-8 mx-auto w-[80%]" />
+        <hr className="border-t border-gray-500 sm:border-[#f2f8fc] mb-8 mx-auto w-[80%]" />
 
         <div className="container mx-auto px-6 flex flex-col items-center text-center space-y-6">
 
