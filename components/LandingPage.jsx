@@ -11,7 +11,7 @@ const fadeIn = {
 const LandingPage = () => {
   return (
     <motion.div initial='hidden' animate='visible' className='landing-container'>
-      <motion.div className='h-24 border-l-2 border-gray-500 sm:border-white mx-auto' 
+      <motion.div className='h-24 border-l-2 border-gray-500 sm:border-[#f2f8fc] mx-auto' 
         initial={{ scaleY: 0 }} 
         animate={{ scaleY: 1 }} 
         transition={{ duration: 0.8 }}
@@ -44,11 +44,11 @@ const LandingPage = () => {
               className='rounded-full w-4'
             />
           </span>
-          <span className='absolute inset-0 scale-0 group-hover:scale-100 transition-transform duration-300 sm:bg-white sm:group-hover:text-black sm:group-hover:bg-white bg-gray-900 group-hover:bg-gray-900'/>
+          <span className='absolute inset-0 scale-0 group-hover:scale-100 transition-transform duration-300 sm:bg-[#f2f8fc] sm:group-hover:text-black sm:group-hover:bg-[#f2f8fc] bg-gray-900 group-hover:bg-gray-900'/>
         </motion.a>
       </motion.div>
 
-      <motion.div className='h-24 border-l-2 border-gray-500 sm:border-white mx-auto' 
+      <motion.div className='h-24 border-l-2 border-gray-500 sm:border-[#f2f8fc] mx-auto' 
         initial={{ scaleY: 0 }} 
         animate={{ scaleY: 1 }} 
         transition={{ duration: 0.8 }}
