@@ -7,6 +7,7 @@ import vscode from './vscode.png';
 import next from './next.png';
 import javascript from './javascript.svg';
 import react from './react.svg';
+import typescript from './TypeScript.svg';
 import tailwind from './Tailwind.svg';
 import python from './Python.svg';
 import postgres from './Postgres.svg';
@@ -40,6 +41,7 @@ export const assets = {
     next,
     javascript,
     react,
+    typescript,
     tailwind,
     git,
     go,
@@ -99,7 +101,7 @@ export const infoList = [
 ];
 
 export const toolkit = [
-    assets.vscode,assets.next, assets.javascript, assets.react, assets.postgres, assets.tailwind, assets.git, assets.go, assets.python
+    assets.vscode,assets.next, assets.javascript, assets.react,assets.typescript, assets.postgres, assets.tailwind, assets.git, assets.go, assets.python
 ];
 
 export const socialLinks = [
