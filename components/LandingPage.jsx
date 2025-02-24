@@ -30,8 +30,7 @@ const LandingPage = () => {
       </motion.h1>
 
       <motion.p className='max-w-2xl mx-auto font-Poppins' variants={fadeIn}>
-        I specialize in creating innovative solutions and building user-friendly experiences. 
-        Let’s work together to turn your ideas into reality!
+        I specialize in crafting innovative solutions and user-friendly experiences. With a strong foundation of modern technologies, I build intuitive, high-performance applications that enhance engagement and deliver lasting impact.
       </motion.p>
 
       <motion.div className='flex flex-col sm:flex-row items-center gap-4 mt-4' variants={fadeIn}>
